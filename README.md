@@ -42,7 +42,7 @@ str(1)
 rand{3-9}
 num.exact[9]
 ```
-3. 匹配'<'和'>'间的内容
+2. 匹配'<'和'>'间的内容
 ```RSE
 str(<)
 group content{
@@ -50,7 +50,7 @@ group content{
 }
 str(>)
 ```
-5. 匹配URL
+3. 匹配URL
 ```
 begin
 ungroup{                        // 创建一个分组，最多出现一次
@@ -67,7 +67,7 @@ ungroup{                        // 创建一个分组，出现一次或多次
 }.onmo
 end
 ```
-7. 匹配时间
+4. 匹配时间
 ```
 ungroup{
   str(1)
